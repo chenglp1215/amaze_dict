@@ -38,6 +38,12 @@ print(user_amaze_dict.contact.phone_num)
 
 ### 使用方法
 
+#### 安装：
+
+```python
+pip install amaze-dict
+```
+
 ```python
 from amaze_dict import wrap_value
 
