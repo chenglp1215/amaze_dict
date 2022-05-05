@@ -70,6 +70,13 @@ china
 
 ```
 
+访问带特殊字符的属性(使用find_child)：
+```shell
+>>> user_amaze_dict.address.find_child("city.old").name
+```
+
+
+
 条件判断：
 
 ```shell
