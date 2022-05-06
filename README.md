@@ -31,7 +31,7 @@ print(user_amaze_dict.address.city)
 print(user_amaze_dict.address.country)
 >> output: china
 print(user_amaze_dict.contact.phone_num)
->> output: <amaze_dict.amaze_dict.LB_None object at 0x7f8664882cd0>
+>> 
 ```
 多级访问直接用属性递进查找，不受中间属性没有影响。 可直接对需要的属性进行访问和判断。
 
