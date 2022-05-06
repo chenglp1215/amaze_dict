@@ -15,6 +15,7 @@ class LeafBase(object):
         if value is None:
             type_class = type("LB_None", (object,), {
                 "__getattr__": lambda x, key: x,
+                "__str__": lambda x: "",
                 "find_child": lambda x, key: x,
                 "is_none": property(lambda x: True),
                 "__bool__": lambda x: False,
@@ -25,6 +26,7 @@ class LeafBase(object):
         elif isinstance(value, bool):
             type_class = type("LB_%s" % (bool(value)), (object,), {
                 "__getattr__": lambda x: LeafBase(),
+                "__str__": lambda x: "%s" % bool(value),
                 "find_child": lambda x: LeafBase(),
                 "is_none": property(lambda x: False),
                 "__bool__": lambda x: value,
